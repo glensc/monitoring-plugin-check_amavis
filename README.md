@@ -28,6 +28,11 @@ define command {
 
 where `email_address` is a valid email address handled by amavisd.
 
+## Copyright
+
+License: GPL v2
+
+(c) 2011-2014 Elan Ruusamäe <glen@pld-linux.org> (maintainer from version 1.1 and upwards)
 
   [1]: http://www.amavis.org/
   [2]: http://perldoc.perl.org/Getopt/Long.html
