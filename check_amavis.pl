@@ -16,6 +16,7 @@ my $port = 10024;
 my $from = '';
 my $to = '';
 my $debug = 0;
+my $timeout = 15;
 
 my %STATES = (
 	"OK" => 0,
@@ -29,6 +30,7 @@ GetOptions (
 	"server|s=s"    => \$server,
 	"port|p=s"      => \$port,
 	"from|f=s"      => \$from,
+	"timeout=s"     => \$timeout,
 	"debug|d"       => \$debug,
 	"to|t=s"        => \$to,
 );
@@ -64,6 +66,7 @@ my $smtp = new Net::SMTP(
 	$server,
 	Port => $port,
 	Debug => $debug,
+	Timeout => $timeout,
 );
 
 if (!$smtp) {
