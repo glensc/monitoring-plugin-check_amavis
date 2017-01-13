@@ -8,6 +8,8 @@
 use Getopt::Long;
 use MIME::Entity;
 use Net::SMTP;
+use strict;
+use warnings;
 
 my $server = '';
 my $port = 10024;
@@ -23,7 +25,7 @@ my %STATES = (
 	"DEPENDENT" => 4,
 );
 
-$result = GetOptions (
+GetOptions (
 	"server|s=s"    => \$server,
 	"port|p=s"      => \$port,
 	"from|f=s"      => \$from,
