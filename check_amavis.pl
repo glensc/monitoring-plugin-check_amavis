@@ -1,10 +1,9 @@
 #!/usr/bin/perl
 # Downloaded from exchange.nagios.org
-# URL: http://exchange.nagios.org/directory/Plugins/Anti-2DVirus/Amavis/check_amavis/details
+# URL: https://exchange.nagios.org/directory/Plugins/Anti-2DVirus/Amavis/check_amavis/details
 #
 # Maintained later on by Elan Ruusamäe <glen@pld-linux.org>
-# http://cvs.pld-linux.org/packages/nagios-plugin-check_amavis/
-# v1.1, 2011-12-22
+# https://github.com/glensc/monitoring-plugin-check_amavis
 
 use Getopt::Long;
 use MIME::Entity;
