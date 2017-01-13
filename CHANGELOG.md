@@ -1,4 +1,4 @@
-## 1.1-1 (2011-12-22)
+## 1.1 (2011-12-22)
 
 Initial release by [Elan Ruusamäe][1]
 
