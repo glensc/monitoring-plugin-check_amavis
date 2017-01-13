@@ -79,7 +79,7 @@ $smtp->dataend();
 my $result = $smtp->message();
 $smtp->close();
 
-if ($result =~/2.7.[01] Ok, discarded/) {
+if ($result =~/2\.7\.[01] Ok, discarded/) {
 	print "OK - All fine\n";
 	exit $STATES{OK};
 } else {
