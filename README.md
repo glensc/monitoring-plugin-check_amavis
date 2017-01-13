@@ -1,5 +1,4 @@
-Nagios plugin to check amavisd-new daemon
-=========================================
+# Nagios/Icinga plugin to check amavisd-new daemon
 
 `check_amavis` checks if [amavisd-new][1] daemon is working and if its antivirus engine is working.
 
@@ -18,11 +17,11 @@ Parameters:
  - `--to` recipient address (if not present copied from `--from`)
  - `--debug` useful for debugging (launch it at command line)
 
-Command configuration: 
+Command configuration:
 ```
 define command {
-    command_name check_amavis 
-    command_line $USER1$/check_amavis.pl --server $HOSTADDRESS$ --from email_address --to email_address --port 10024 
+    command_name check_amavis
+    command_line $USER1$/check_amavis.pl --server $HOSTADDRESS$ --from email_address --to email_address --port 10024
 }
 ```
 
@@ -32,7 +31,7 @@ where `email_address` is a valid email address handled by amavisd.
 
 License: GPL v2
 
-(c) 2011-2014 Elan Ruusamäe <glen@pld-linux.org> (maintainer from version 1.1 and upwards)
+(c) 2011-2017 Elan Ruusamäe <glen@pld-linux.org> (maintainer from version 1.1 and upwards)
 
   [1]: http://www.amavis.org/
   [2]: http://perldoc.perl.org/Getopt/Long.html
