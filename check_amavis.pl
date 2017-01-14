@@ -82,7 +82,10 @@ $smtp->dataend();
 my $result = $smtp->message();
 $smtp->close();
 
-if ($result =~/2\.7\.[01] Ok, discarded/) {
+warn "RESULT[$result]\n" if $debug;
+
+# <<< 250 2.5.0 Ok, id=21563-09, BOUNCE
+if ($result =~ /2\.7\.[01] Ok,/ && $result =~ /discarded|BOUNCE/) {
 	print "OK - All fine\n";
 	exit $STATES{OK};
 } else {

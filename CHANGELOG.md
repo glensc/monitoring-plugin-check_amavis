@@ -4,9 +4,11 @@
 
   - add timeout 15s, [bd89e87]
   - strict mode fix, [8eb9f02]
+  - support alternative smtp messages. fixes [#1]
 
-[bd89e87]: https://github.com/glensc/monitoring-plugin-check_amavis/commit/bd89e87
+[#1]: https://github.com/glensc/monitoring-plugin-check_amavis/issues/1
 [8eb9f02]: https://github.com/glensc/monitoring-plugin-check_amavis/commit/8eb9f02
+[bd89e87]: https://github.com/glensc/monitoring-plugin-check_amavis/commit/bd89e87
 [1.2]: https://github.com/glensc/monitoring-plugin-check_amavis/compare/v1.1...master
 
 ## [1.1] - 2011-12-22
