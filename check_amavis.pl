@@ -85,7 +85,7 @@ $smtp->close();
 warn "RESULT[$result]\n" if $debug;
 
 # <<< 250 2.5.0 Ok, id=21563-09, BOUNCE
-if ($result =~ /2\.7\.[01] Ok,/ && $result =~ /discarded|BOUNCE/) {
+if ($result =~ /2\.5\.[01] Ok,/ && $result =~ /discarded|BOUNCE/) {
 	print "OK - All fine\n";
 	exit $STATES{OK};
 } else {
